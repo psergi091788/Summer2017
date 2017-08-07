@@ -11,8 +11,25 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <script>
+        <script type="text/javascript">
+          for(var x = 0;  x < 100; x++)
+          {
+              if(x % 2 === 0)
+              {
+                  console.log("fizz");
+              }
+              else if(x % 3 === 0)
+              {
+                  console.log("buzz"); 
+              }
+              else if(x % 2 === 0 && x % 3 === 0)
+              {
+                  console.log("fizz buzz");
+              }
+          
+            }
             
+            console.log(x); 
           
             
             
