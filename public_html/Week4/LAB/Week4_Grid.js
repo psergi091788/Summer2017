@@ -18,7 +18,8 @@ function randomGrid() {
 
     var items = [];
     var str = " ";
-  
+    var average = 0; 
+   
 
     str += '<table border="1">';
 
@@ -31,6 +32,7 @@ function randomGrid() {
         for (let col = 0; col < result; col++)
         {
             items[rows][col] = randomNumber(1, 100);
+            average += items[rows][col]; 
             
             
           
@@ -58,6 +60,8 @@ function randomGrid() {
 
     } /* END OUTTER FOR LOOP  */
     str += '</table>';
+    average = average/(result*result); 
+    str += '<p>' + "Your Average is:" + average + '</p>'; 
     div.innerHTML = str;
     
      
