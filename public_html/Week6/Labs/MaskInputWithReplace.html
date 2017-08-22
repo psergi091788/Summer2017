@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div>Numbers</div> 
+        <input name="nums" type="text" value=""/>
+        
+        <script>
+            let storeSocial = ""; 
+            
+                let input = document.querySelector('input'); 
+                
+          var regEx = /([0-9]{3})([0-9]{2})([0-9]{4})/;  
+          var noLetters = /[^0-9]+/g; 
+          
+          input.addEventListener('blur', check);
+          input.addEventListener('focus', focusIn); 
+          
+          function check ()
+          {
+              storeSocial = this.value.replace(noLetters, ''); 
+              this.value = storeSocial.replace(regEx, '###-##-$3'); 
+          }   
+          
+          function focusIn()
+          {
+              this.value = storeSocial; 
+          }
+          
+    
+    
+        </script>
+    </body>
+</html>
