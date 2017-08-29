@@ -20,12 +20,20 @@
 		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	];
+        var str = ""; 
         
-        for(var i = 0; i < people; i++)
+        for(var i = 0; i < people.length; i++)
         {
-            var str = ""; 
+            str += "<div id='" + i + "' class='border'>"
+            str += "<p>";
+            str += people[i].first; 
+            str += people[i].last; 
+            str += people[i].credit; 
+            str += "</p>"; 
+            str += "</div>";
             
         }
+        document.body.innerHTML = str; 
 	
 </script>
 </body>

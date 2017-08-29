@@ -11,7 +11,7 @@ let div = window.document.querySelector('#wrapper');
 
 function randomGrid() {
 
-    // take div and get the inner html to equal the input value, poutside function have event listener 
+    // take div and get the inner html to equal the input value, outside function have event listener 
     var result = input.value;
     div.innerHTML = result;
     result = parseInt(result);

@@ -6,18 +6,17 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TO DO supply a title</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TO DO write content</div>
         <script>
-            for(var i = 0; i < 100; i++)
-            {
-                console.log(i); 
-            }
+            var str = 'Today we are matching any number 1 through 9 or 100 through 999.';
+
+            var machesFound = str.match(/[0-9]+/g);
             
+            Console.log(matchesFound); 
         </script>
     </body>
 </html>
