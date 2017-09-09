@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TO DO write content</div>
+
+        <script>
+                      
+            var myRequest = 'users.json';
+            
+            // request can be file webpage or image, anything you want to grab 
+            //
+            fetch(myRequest)
+            .then(function(response) {              
+                  return response.json();               
+            })
+            .then(function(json) { 
+                console.log(json);
+            });
+           
+        </script>
+    </body>
+</html>
